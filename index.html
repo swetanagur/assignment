@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/Users/siddu/OneDrive/Desktop/Assignment.01/app.js"></script>
+
+<body  ng-app="myApp" ng-controller="MainCtrl" ng-model="story">
+	<table>
+		<tr>Top Ten Stories</tr>
+		<tr ng-repeat="x in getStory | limitTo:10" >
+			
+			<td>{{x}}</td>
+		</tr>
+	</table>
+</body>
+</html>
